@@ -1,0 +1,45 @@
+1. Finding T(2) for T(n) = 3T(n-1) + 12n, with T(0) = 5
+To find T(2), we'll work through the recurrence relation starting from T(0) and moving towards T(2).
+
+T(0) = 5 (Given)
+T(1) = 3T(0) + 12(1) = 3 * 5 + 12 = 15 + 12 = 27
+T(2) = 3T(1) + 12(2) = 3 * 27 + 12 * 2 = 81 + 24 = 105
+
+Therefore, T(2) = 105 for the given recurrence relation.
+
+
+
+2. Solving Recurrence Relations using Substitution Method:
+a. T(n) = T(n-1) + c
+Let's solve this:
+T(n) = T(n-1) + c
+T(n-1) = T(n-2) + c
+T(n-2) = T(n-3) + c
+
+By substitution:
+T(n) = T(n-2) + 2c
+= T(n-3) + 3c
+= T(n-k) + kc
+
+If we assume the base case is T(0) = a:
+T(n-k) = T(0) + kc = a + kc
+
+b. T(n) = 2T(n/2) + n
+This is a case of the Master Theorem, where T(n) = aT(n/b) + f(n)
+Here, a = 2, b = 2, and f(n) = n
+According to the Master Theorem, for this case: T(n) = Θ(n log n)
+
+c. T(n) = 2T(n/2) + c
+This recurrence is similar to the previous one. Using the Master Theorem, the time complexity for this would also be Θ(n log n).
+
+d. T(n) = T(n/2) + c
+This recurrence relation represents linear time complexity, which is Θ(n).
+
+
+
+3. Solving Recurrence Relations using Recursive Tree Approach:
+a. T(n) = 2T(n-1) + 1
+This recursive relation represents exponential growth, where T(n) = O(2^n).
+
+b. T(n) = 2T(n/2) + n
+Using the Master Theorem, this recurrence relation results in a time complexity of Θ(n log n).
