@@ -1,0 +1,44 @@
+The time complexity of each code block:
+
+### Problem 1: Quicksort
+- **Time Complexity:** O(n log n) on average
+  - The partitioning step takes O(n) time, and the recursive calls are made on two halves.
+  - In the worst case, it can be O(n^2) if the pivot choice consistently creates imbalanced partitions.
+
+### Problem 2: Nested Loop Example
+- **Time Complexity:** O(rows * cols)
+  - The function iterates through each element of the matrix once.
+  - Assuming the matrix is rectangular (rows × cols).
+
+### Problem 3: Example Function
+- **Time Complexity:** O(n)
+  - The function iterates through each element in the array once.
+
+### Problem 4: Longest Increasing Subsequence
+- **Time Complexity:** O(n^2)
+  - The nested loops iterate through all pairs of elements in the array.
+
+### Problem 5: Mysterious Function
+- **Time Complexity:** O(n^2)
+  - The function has nested loops that iterate through all pairs of elements in the array.
+
+### Problem 6: Sum of Digits (Recursive)
+- **Time Complexity:** O(log10(n))
+  - The recursive function divides the number by 10 in each call.
+
+### Problem 7: Fibonacci Series (Recursive)
+- **Time Complexity:** O(2^n)
+  - The naive recursive Fibonacci function has exponential time complexity due to repeated calculations.
+
+### Problem 8: Subset Sum (Recursive)
+- **Time Complexity:** O(2^n)
+  - The recursive solution explores all possible subsets.
+
+### Problem 9: Word Break (Recursive)
+- **Time Complexity:** Exponential
+  - The recursive solution explores all possible segmentations.
+
+### Problem 10: N-Queens (Recursive)
+- **Time Complexity:** Exponential
+  - The recursive solution explores all possible queen placements.
+
